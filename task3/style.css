@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f4f6;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 40px 20px;
+}
+
+.todo {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-form input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.todo-form button,
+.filter,
+.delete-button {
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.todo-form button {
+    padding: 12px 18px;
+
+    background: #2563eb;
+    color: white;
+}
+
+.todo-form button:hover {
+    background: #1d4ed8;
+}
+
+.counter {
+    margin: 20px 0;
+
+    font-size: 15px;
+    color: #555;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.filter {
+    padding: 8px 14px;
+
+    background: #e5e7eb;
+    color: #333;
+}
+
+.filter:hover {
+    background: #d1d5db;
+}
+
+.filter.active {
+    background: #2563eb;
+    color: white;
+}
+
+.todo-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.todo-text {
+    flex: 1;
+
+    word-break: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.delete-button {
+    padding: 8px 12px;
+
+    background: #dc2626;
+    color: white;
+}
+
+.delete-button:hover {
+    background: #b91c1c;
+}
