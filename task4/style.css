@@ -1,0 +1,149 @@
+:root {
+    --primary: #4a90e2;
+    --primary-hover: #357abd;
+    --error: #e74c3c;
+    --success: #2ecc71;
+    --bg-color: #f5f7fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--primary);
+}
+
+.rules {
+    background: #eef2f7;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.rules ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.game-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+input:disabled {
+    background: #f0f0f0;
+    cursor: not-allowed;
+}
+
+button {
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: var(--primary-hover);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+button.secondary {
+    background: #7f8c8d;
+}
+
+button.secondary:hover {
+    background: #6c7a7d;
+}
+
+.message {
+    min-height: 24px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.message.error { color: var(--error); }
+.message.success { color: var(--success); font-size: 1.1rem; }
+
+.stats {
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.history-list li {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-list li:last-child {
+    border-bottom: none;
+}
+
+.guess-number {
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary);
+    background: #eef2f7;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
