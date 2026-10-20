@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<main class="game">
+    <h1>Simon</h1>
+
+    <p class="level">Уровень: <span id="level">0</span></p>
+    <p id="status" class="status">Нажмите «Старт»</p>
+
+    <div class="board">
+        <button type="button" class="pad pad-green" aria-label="Зелёная кнопка"></button>
+        <button type="button" class="pad pad-red" aria-label="Красная кнопка"></button>
+        <button type="button" class="pad pad-yellow" aria-label="Жёлтая кнопка"></button>
+        <button type="button" class="pad pad-blue" aria-label="Синяя кнопка"></button>
+    </div>
+
+    <div class="controls">
+        <button type="button" id="start-btn" class="start">Старт</button>
+        <label class="sound">
+            <input type="checkbox" id="sound-toggle" checked>
+            Звук
+        </label>
+    </div>
+</main>
+</body>
+</html>
