@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+.score {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+
+    border: 3px solid #111827;
+    border-radius: 8px;
+}
+
+.restart {
+    min-width: 160px;
+    min-height: 44px;
+    padding: 0.6rem 1.5rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+.restart:hover {
+    background: #1d4ed8;
+}
+
+.restart[hidden] {
+    display: none;
+}
+
+.hint {
+    margin: 0;
+    color: #6b7280;
+}
