@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лента постов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__title">Лента постов</h1>
+      <input class="search" id="search" type="search" placeholder="Поиск по заголовку" aria-label="Поиск по заголовку" autocomplete="off">
+    </div>
+  </header>
+
+  <main class="feed">
+    <p class="feed__counter" id="counter" aria-live="polite" hidden></p>
+    <ul class="posts" id="posts"></ul>
+    <p class="notice" id="empty" hidden>По этому запросу среди загруженных постов ничего нет</p>
+    <p class="notice notice--hint" id="search-hint" hidden>Поиск идёт по уже загруженным постам. Очистите поле, чтобы подгрузить новые.</p>
+    <div class="loader" id="loader" role="status" hidden>
+      <span class="loader__spinner" aria-hidden="true"></span>
+      <span>Загрузка…</span>
+    </div>
+    <div class="error" id="error" role="alert" hidden>
+      <p class="error__text" id="error-text"></p>
+      <button class="error__button" id="retry" type="button">Повторить</button>
+    </div>
+    <p class="notice notice--end" id="end" hidden>Больше постов нет</p>
+    <div class="sentinel" id="sentinel" aria-hidden="true"></div>
+  </main>
+</body>
+</html>
